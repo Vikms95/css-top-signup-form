@@ -4,3 +4,4 @@ Ideas of what I want to apply to this project:
 - Usage of css units like rem and vh
 - Combine different CSS positioning settings
 - CSS functions
+- Using Emmet
