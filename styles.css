@@ -1,15 +1,22 @@
+@font-face {
+  font-family:Norse-Bold ;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
 :root{
-    font-family:'Times New Roman', Times, serif ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
 html,body{
     margin: 0;
     padding:0;
+    height: 100%;
 }
 
 .container{
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 .title-section{
     padding-top: 10rem;
@@ -18,34 +25,99 @@ html,body{
     align-items: center;
     justify-content: flex-start;
     width: 30%;
-    height: 100vh;
     background-image: url("./images/bg.jpg");
 
 }
 .title-background{
-    color: white;
     display: flex;
     justify-content: center;
     width: 100%;
     max-height: 6rem;
     background-color: black;
-    opacity: .5;
+    opacity: 0.5;
 }
 .odin-logo{
     display: flex;
     justify-content: flex-end;
+    padding-top: .5rem;
     width: 40%;
-    height: 6rem;
-    width: 30%;
+    height: 5rem;
+    width: 25%;
+    opacity: 1;
 }
 .title{
+    font-family:Norse-Bold, sans-serif;
+    font-size: 3rem;
+    color: white;
     display: flex;
     justify-content: flex-start;
-}
-.form-section{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 70%;
+    align-items: center;
 }
 
+.credits{
+  font-size: smaller;
+  color: white;
+  margin-top: 20rem;
+}
+
+.credits > a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+
+.form-section{
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: center;
+  width: 40rem;
+  height: 70vh;
+  padding: 2rem;
+  line-height: 1.3rem;
+
+}
+
+.hero-quote{
+  margin: 0;
+}
+
+.call-on-action{
+  margin-top: 4rem;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-variant: small-caps;
+  font-size: smaller;
+  color: rgb(68, 68, 68);
+}
+
+.form-column{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  border:#E5E7EB;
+}
+
+.button-container{
+  display: flex;
+  margin: 2rem 0rem;
+}
+
+.submit-button{
+  color: white;
+  background-color:#596D48;
+  padding: .6rem 2rem;
+  border: transparent;
+  border-radius: .5rem;
+}
